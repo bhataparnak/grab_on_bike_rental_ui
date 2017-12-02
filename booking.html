@@ -141,9 +141,17 @@
       <div class="tab-pane active" id="home" role="tabpanel">
       
         <div class="form-group" style="margin-top: 40px;margin-bottom: 40px;">
-            <div class='col-sm-6'>
-               <input type='text' class="form-control" id='datetimepicker4' />
+            <div class="col-sm-6 form-group">
+               <label>From Date</label>
+               <input type='text' class="form-control" id='datetimepicker1' />
             </div>
+            <div class="col-sm-6 form-group">
+                <label>To Date</label>
+               <input type='text' class="form-control" id='datetimepicker2' />
+            </div>
+        </div>
+        <div class="form-group col-md-4">
+          <a href="#" class="test_drive_btn btn_bg">Continue</a>
         </div>
       </div>
 
@@ -432,7 +440,8 @@
     
     <script type="text/javascript">
          $(function () {
-                $('#datetimepicker4').datetimepicker();
+                $('#datetimepicker1').datetimepicker();
+                $('#datetimepicker2').datetimepicker();
             });
     </script>
     
