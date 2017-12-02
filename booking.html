@@ -1,0 +1,440 @@
+<!-- DOCTYPE -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- Viewport Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      Bike rental
+    </title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+   
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <link rel="stylesheet" media="text/css" href="assets/css/bootstrap-datetimepicker.min.css"> 
+    <!--Fonts-->
+    <link rel="stylesheet" media="screen" href="assets/fonts/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" media="screen" href="assets/fonts/simple-line-icons.css">    
+     
+    <!-- Extras -->
+    <link rel="stylesheet" type="text/css" href="assets/extras/owl/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="assets/extras/animate.css">
+     <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+           
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
+    </script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js">
+    </script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <!-- Header area wrapper starts -->
+    <header id="header-wrap">
+
+      <!-- Header area starts -->
+      <section id="header">
+
+        <!-- Navbar Starts -->
+        <nav class="navbar navbar-light" data-spy="affix" data-offset-top="50">
+          <div class="container">
+            <button class='navbar-toggler hidden-md-up pull-xs-right' data-target='#main-menu' data-toggle='collapse' type='button'>
+              ☰
+            </button>
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">
+              <!-- <img src="assets/img/logo.png" alt=""> -->
+            </a>
+            <div class="collapse navbar-toggleable-sm pull-xs-left pull-md-right" id="main-menu">
+              <!-- Navbar Starts -->
+              <ul class="nav nav-inline">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html" role="button" aria-pressed="true">Home</a>                  
+                </li>                                     
+                <li class="nav-item">
+                  <a class="nav-link" href="#fleet" role="button" aria-pressed="true">
+                    Our Fleet
+                  </a>
+                  
+                </li>             
+                <li class="nav-item">
+                  <a class="nav-link" href="#testimonial" role="button"  aria-pressed="true">
+                  Testimonial
+                  </a>
+                  
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"  href="#faq" role="button" aria-pressed="true">
+                    FAQ
+                  </a>                    
+                  
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#contact" role="button" aria-pressed="true">
+                    Contact Us
+                  </a>
+                  
+                </li>   
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#contact" role="button" aria-pressed="true">
+                    Book Now
+                  </a>
+                  
+                </li>        
+                <!-- Search in right of nav -->
+                <li class="nav-item" class="search">
+                  <form class="top_search clearfix">
+                    <div class="top_search_con">
+                      <input class="s" placeholder="Search Here ..." type="text">
+                      <span class="top_search_icon"><i class="icon-magnifier"></i></span>
+                      <input class="top_search_submit" type="submit">
+                    </div>
+                  </form>
+                </li>
+                <!-- Search Ends -->                  
+              </ul>  
+            </div>              
+              <!-- Form for navbar search area -->
+              <form class="full-search">
+                <div class="container">
+                  <input type="text" placeholder="Type to Search">
+                  <a href="#" class="close-search">
+                    <span class="fa fa-times fa-2x">
+                    </span>
+                  </a>
+                </div>
+              </form>
+              <!-- Search form ends -->
+          </div>
+        </nav>
+        <!-- Navbar Ends -->
+
+      </section> 
+   
+    </header>
+    <!-- Header-wrap Section End -->
+
+  <div class="container"> 
+
+
+    <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist" style="margin-top:40px;">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#home" role="tab"> <span>Choose Date and Time</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#profile" role="tab"> <span>Choose Bike</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#messages" role="tab"> <span>Checkout</span></a>
+        </li>
+       
+      </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane active" id="home" role="tabpanel">
+      
+        <div class="form-group" style="margin-top: 40px;margin-bottom: 40px;">
+            <div class='col-sm-6'>
+               <input type='text' class="form-control" id='datetimepicker4' />
+            </div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="profile" role="tabpanel">
+        <!-- Fleet Section -->
+    <section id="fleet" class="section">
+      <!-- Container Starts -->
+      <div class="container">        
+        <!-- Row Starts -->
+        <div class="row">
+          <h1 class="section-title wow fadeInDown" data-wow-delay=".5s">
+            Choose Bike
+          </h1>
+          
+        </div><!-- Row Ends -->
+
+        <div class="model_list_container row"><!--Row 1-->
+          <div class="col-md-4 col-xs-12 float-left model_list padding_lr">
+            <div class="model_cars">
+              <span class="model_image"><img src="assets/img/ducati" alt="bike"></span>
+              <div class="make_caption">
+                <span class="model_name">Ducati-Monster</span>
+                <span class="model_price">Rs 200/ hour</span>
+                <span>15/12/17</span> to <span>17/12/17</span>
+                <div>
+                <a href="booking.html" class="test_drive_btn btn_bg">Book Now</a>
+                </div>
+                <div>
+                  
+                </div>
+              </div>
+            </div><!-- End of model_cars item -->
+          </div>
+          <div class="col-md-4 col-xs-12 float-left model_list padding_lr">
+              <div class="model_cars">
+                <span class="model_image">
+                  <a href="model_page.html">
+                    <img src="assets/img/Royal-Enfield-Classic---350-2.png" alt="bike">
+                  </a>
+                </span>
+                <div class="make_caption">
+                  <span class="model_name">Bullet</span>
+                  <span class="model_price">Rs 200/ hour</span>
+                  <span>15/12/17</span> to <span>17/12/17</span>
+                  <div>
+                  <a href="booking.html" class="test_drive_btn btn_bg">Book Now</a>
+                  </div>
+                </div>
+              </div><!-- End of model_cars item -->
+            </div>
+            <div class="col-md-4 col-xs-12 float-left model_list padding_lr">
+                <div class="model_cars">
+                  <span class="model_image"><img src="assets/img/KTM-Duke-200-57.png" alt="bike"></span>
+                  <div class="make_caption">
+                    <span class="model_name">KTM</span>
+                    <span class="model_price">Rs 200/ hour</span>
+                    <span>15/12/17</span> to <span>17/12/17</span>
+                    <div>
+                    <a href="booking.html" class="test_drive_btn btn_bg">Book Now</a>
+                    </div>
+                  </div>
+                </div><!-- End of model_cars item -->
+              </div>
+
+        </div> <!--Row 1 End-->
+      </div><!-- Container Ends -->
+    </section>
+    <!-- Fleet Section End -->
+    
+      </div>
+      <div class="tab-pane" id="messages" role="tabpanel">
+        <div class="container" style="margin-top: 40px;">
+        <div class="row">
+        <div class="col-xs-12 col-md-8 align-self-center">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Payment Details
+                    </h3>
+                    
+                </div>
+                <div class="panel-body">
+                    <form role="form">
+                    <div class="form-group col-md-12">
+                        <label for="name">NAME</label>
+                          <input type="text" class="form-control" id="name" placeholder="Enter Name" required autofocus />
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="mobnumb">MOBILE NUMBER</label>
+                          <input type="tel" class="form-control" id="mobnumb" placeholder="Valid mobile Number" required autofocus />
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="email">EMAIL</label>
+                          <input type="email" class="form-control" id="email" placeholder="Valid Email ID" required autofocus />
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="cardNumber">CARD NUMBER</label>
+                          <input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number" required autofocus />
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="row">
+                        <div class="col-xs-7 col-md-7">
+                            <div class="form-group col-md-12">
+                                <label for="expityMonth">EXPIRY DATE</label>
+                                <div class="clearfix"></div>
+                                <div class="col-xs-6 col-md-4  pl-0">
+                                    <input type="text" class="form-control" id="expityMonth" placeholder="MM" required />
+                                </div>
+                                <div class="col-xs-6 col-md-4">
+                                    <input type="text" class="form-control" id="expityYear" placeholder="YY" required /></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-5 col-md-3 pull-right">
+                            <div class="form-group">
+                                <label for="cvCode">
+                                    CV CODE</label>
+                                <input type="password" class="form-control" id="cvCode" placeholder="CV" required />
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-12">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#"><span class="badge pull-right"><b>Rs 4200</b></span> <b>Final Payment</b></a>
+                </li>
+            </ul>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-3" style="margin-bottom:20px;margin-top: 20px;">
+             <a href="#" class="btn btn-success btn-lg" role="button" style="width:100%;">Pay</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+      </div>
+      
+    </div>
+  </div>
+
+  
+  
+    <!-- Footer Section -->
+    <footer id="contact">
+      <!-- Container Starts -->
+      <div class="container">
+        <!-- Row Starts -->
+        <div class="row section">
+          <!-- Footer Widget Starts -->
+          <div class="footer-widget col-md-3 col-xs-12 wow fadeIn">
+            <h3 class="small-title">
+              ABOUT US
+            </h3>
+            <p>
+              Etiam ornare condimentum massa et scelerisque. Mauris nibh ipsum, laoreet at venenatis ac, rutrum sed risus, 
+            </p> 
+            <p>Aliquam magna nibh, mattis a urna nec. Semper venenatis magna.</p>
+            <div class="social-footer">
+              <a href="#"><i class="fa fa-facebook icon-round"></i></a>
+              <a href="#"><i class="fa fa-twitter icon-round"></i></a>
+              <a href="#"><i class="fa fa-linkedin icon-round"></i></a>
+              <a href="#"><i class="fa fa-google-plus icon-round"></i></a>
+            </div>           
+          </div><!-- Footer Widget Ends -->
+          
+          <!-- Footer Widget Starts -->
+          <div class="footer-widget col-md-3 col-xs-12 wow fadeIn" data-wow-delay=".2s">
+            <h3 class="small-title">
+              TWITTER
+            </h3>
+            <ul class="recent-tweets">
+              <li class="tweet">
+                My <a href="#">@Quora</a>                
+                <span class="tweet-text">
+                  answer to What's the best FAQ plugin for WordPress?
+                </span>
+                <a href="#">qr.ae/RFTbIGa</a> 
+                <span class="tweet-date">
+                  August 21, 2017 10:29pm
+                </span>
+              </li>
+              
+              <li class="tweet">
+                My <a href="#">@Quora</a>                
+                <span class="tweet-text">
+                  answer to What's the best FAQ plugin for WordPress?
+                </span>
+                <a href="#">qr.ae/RFTbIGa</a> 
+                <span class="tweet-date">
+                  August 21, 2017 10:29pm
+                </span>
+              </li>
+              
+              
+            </ul>
+          </div><!-- Footer Widget Ends -->
+
+          <!-- Footer Widget Starts -->
+          <div class="footer-widget col-md-3 col-xs-12 wow fadeIn" data-wow-delay=".8s">
+            <h3 class="small-title">
+              SUBSCRIBE US
+            </h3>
+            <div class="contact-us">
+              <p>Lorem Ipsum</p>
+              <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter your name">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter your email">
+              </div>
+              <button type="submit" class="btn btn-common">Submit</button>
+            </form>
+            </div>
+          </div><!-- Footer Widget Ends -->
+
+          <!-- Footer Widget Starts -->
+          <div class="footer-widget col-md-3 col-xs-12 wow fadeIn">
+            <h3 class="small-title">
+              CONTACT US
+            </h3>
+            <address>
+              Lower Parel - HQ<br>
+              High Street Phoenix, Phoenix Mills<br> 
+              Compound, 462, Senapati Bapat <br>
+              Marg, Lower Parel West,<br>
+              Mumbai, India, 400 013
+            </address>
+          </div><!-- Footer Widget Ends -->
+        
+        </div><!-- Row Ends -->
+      </div><!-- Container Ends -->
+      
+      <!-- Copyright -->
+      <div id="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <p class="copyright-text">
+                ©  2017 Rentbike. All right reserved. Designed with by <a href="#">Team Void</a>
+              </p>
+            </div>
+            <div class="col-md-6  col-sm-6">
+              <ul class="nav nav-inline pull-xs-right">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sitemap</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Terms of services</a>
+                </li>
+              </ul>        
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright  End-->
+      
+    </footer>
+    <!-- Footer Section End-->
+    
+   
+
+    <!-- JavaScript & jQuery Plugins -->
+    <!-- jQuery Load -->
+    <script src="assets/js/jquery-min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/tether.min.js"></script>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--WOW Scroll Spy-->
+    <script src="assets/js/wow.js"></script>
+   
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+     <!-- All JS plugin Triggers -->
+   
+    
+    <script type="text/javascript">
+         $(function () {
+                $('#datetimepicker4').datetimepicker();
+            });
+    </script>
+    
+  </body>
+</html>
